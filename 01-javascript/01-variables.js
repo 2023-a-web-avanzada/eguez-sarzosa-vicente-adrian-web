@@ -111,10 +111,32 @@ delete adrian.nombre;
 console.log(Object.keys(adrian));
 console.log(adrian);
 
-
-
-
-
+// Variables por valor o por referencia
+// Variables por valor
+// Primitivas: number string boolean
+let edadAdrian = 33;
+let edadVicente = edadAdrian;
+console.log(edadAdrian); //32
+console.log(edadVicente); //32
+edadAdrian = edadAdrian + 1;
+console.log(edadAdrian); //33
+console.log(edadVicente); //32
+// Variables por referencia
+// Object: {} []
+let notas = {
+    total: 10,
+};
+let notasSegundoBimestre = notas; // IGUALACION REFERENCIA
+notasSegundoBimestre.total = notasSegundoBimestre.total + 1;
+console.log(notas); // 11
+console.log(notasSegundoBimestre); // 11
+// Como clonar objetos
+let notasTercerBimestre = Object.assign({}, notas);
+// Object.assign([], arreglo);
+notasTercerBimestre.total = notasTercerBimestre.total + 1;
+console.log(notas); // 11
+console.log(notasSegundoBimestre); // 11
+console.log(notasTercerBimestre); // 12
 
 
 
