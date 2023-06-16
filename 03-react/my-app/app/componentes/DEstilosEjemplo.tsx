@@ -1,9 +1,12 @@
 // app/componentes/DEstilosEjemplo.tsx
 // npm install --save @emotion/styled @emotion/react
-import { css } from '@emotion/react'
+
+'use client'
 import styled from "@emotion/styled";
+
+import { css } from '@emotion/react'
 const pinkStyle = css`
-  color: hotpink;
+  color: pink;
 `
 const TituloNaranja = styled.h1`
     color: orange;
@@ -18,7 +21,7 @@ export default function DEstilosEjemplo(){
         <>
             <TituloNaranja>Titulo 1</TituloNaranja>
             <TituloVerde>Titulo 2</TituloVerde>
-            <div className={pinkStyle as unknown as string}>
+            <div css={pinkStyle}>
                 Texto pink
             </div>
         </>
