@@ -11,10 +11,6 @@ M
 02-typescript/01-variables.ts,c/9/c9c1d9be1afa45e4b230117767690d0b3810fd98
 M
 01-javascript/04-funciones.js,4/3/43317446ea836200fc7c8ae241372d5cbedda09a
-L
-03-react/my-app/app/page.tsx,2/b/2beb9a4b049ce8e7d92d3243704aba75ae8bbdbe
-N
-03-react/my-app/app/layout.tsx,1/4/14e5797d180b70067cadf2e228a0e45ccc09acb9
 M
 03-react/my-app/tsconfig.json,2/5/25b475e0fb40924537f909f183837bff862dc046
 Y
@@ -23,13 +19,7 @@ J
 02-typescript/04-clases.ts,9/c/9c0bad42ba723dd33370d7a52799666d4dc84723
 Z
 *03-react/my-app/app/c_componentes/page.tsx,a/0/a0f56e4ea172219773ad9302177cd91a753531f4
-d
-403-react/my-app/app/componentes/c_menu.component.tsx,1/6/16b6c1d888175d36b6a4610fb9888ad49dee87a8
 Q
 !03-react/my-app/postcss.config.js,9/d/9d9b11cfacc62811ac9d6cd43943c331b78b6b4e
-L
-03-react/my-app/package.json,b/4/b4bf71de326d5402da26de7ecba07080c371b7cc
-R
-"03-react/my-app/tailwind.config.js,8/7/87766199a30e8a9435c81a6343c53836a9eceff7
 X
 (03-react/my-app/app/d_use_state/page.tsx,a/d/ade62002ae950297183b45df4d5c7770bc88be8d
