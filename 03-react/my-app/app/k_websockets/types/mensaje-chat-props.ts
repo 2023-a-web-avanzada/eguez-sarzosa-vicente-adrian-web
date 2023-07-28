@@ -1,3 +1,5 @@
+
+
 // types/mensaje-chat-props.ts
 export type MensajeChatProps = {
     nombre: string;
