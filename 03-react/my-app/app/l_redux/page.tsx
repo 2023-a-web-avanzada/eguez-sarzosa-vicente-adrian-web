@@ -1,8 +1,7 @@
 'use client'
 import {useAppSelector} from "@/app/l_redux/hooks/hooks";
-import {Provider, useDispatch} from "react-redux";
+import {useDispatch} from "react-redux";
 import React from "react";
-import store from './store/store'
 import { agregarMateria, establecerMateriaActual, establecerPeriodoActual } from './features/materias/materiasSlice'
 import MostrarMateria from "@/app/l_redux/components/MostrarMateria";
 
