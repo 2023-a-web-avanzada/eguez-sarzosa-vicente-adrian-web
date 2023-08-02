@@ -50,7 +50,6 @@ const mapDispatchToProps: MapDispatchToProps<DispatchProps, MateriaProps > = {
 type MostrarMateriaProps = MateriaProps & DispatchProps & ConnectedProps
 
 export function MostrarMateria(props: MostrarMateriaProps) {
-
     const materiaStore = useAppSelector((state) => state.materias)
     const {materiaActual, periodoActual, todos, cargando} = materiaStore;
     const dispatch = useDispatch()
