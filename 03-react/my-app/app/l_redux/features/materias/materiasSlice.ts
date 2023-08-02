@@ -12,6 +12,7 @@ export interface MateriaState {
     materiaActual: Materia;
     periodoActual: string;
     todos:any[];
+    cargando:boolean;
 }
 
 // Define the initial state using that type
@@ -22,7 +23,8 @@ export const initialState: MateriaState = {
         nombre: '',
         descripcion: '',
     },
-    periodoActual: ''
+    periodoActual: '',
+    cargando: false
 }
 
 export const fetchTodos = createAsyncThunk(
@@ -59,10 +61,17 @@ export const materiaSlice = createSlice({
         builder.addCase(fetchTodos.fulfilled, (state, action) => {
             // Add user to the state array
             state.todos = action.payload
+            state.cargando = false
         })
         builder.addCase(fetchTodos.rejected, (state) => {
             // Add user to the state array
             state.todos = [{id:'NA', title:'NA'}]
+            state.cargando = false
+        })
+        builder.addCase(fetchTodos.pending, (state) => {
+            // Add user to the state array
+            state.cargando = true
+            state.todos = []
         })
     }
 })

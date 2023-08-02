@@ -52,7 +52,7 @@ type MostrarMateriaProps = MateriaProps & DispatchProps & ConnectedProps
 export function MostrarMateria(props: MostrarMateriaProps) {
 
     const materiaStore = useAppSelector((state) => state.materias)
-    const {materiaActual, periodoActual, todos} = materiaStore;
+    const {materiaActual, periodoActual, todos, cargando} = materiaStore;
     const dispatch = useDispatch()
     return (
         <>
@@ -95,6 +95,7 @@ export function MostrarMateria(props: MostrarMateriaProps) {
             }>
                 Obtener todos
             </button>
+            <p><strong>CARGANDO: </strong> {cargando ? 'Cargando...': ''}</p>
             {
                 todos
                     .map(
