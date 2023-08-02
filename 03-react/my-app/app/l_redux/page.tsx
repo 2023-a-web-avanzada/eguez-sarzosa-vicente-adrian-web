@@ -4,6 +4,7 @@ import {Provider, useDispatch} from "react-redux";
 import React from "react";
 import store from './store/store'
 import { agregarMateria, establecerMateriaActual, establecerPeriodoActual } from './features/materias/materiasSlice'
+import MostrarMateria from "@/app/l_redux/components/MostrarMateria";
 
 export default function Page() {
 
@@ -76,6 +77,8 @@ export default function Page() {
                     </div>
                 </div>
             </div>
+            <h1>Mostrar materia actual en componente</h1>
+            <MostrarMateria colorRojo={true}/>
         </>
     )
 }
