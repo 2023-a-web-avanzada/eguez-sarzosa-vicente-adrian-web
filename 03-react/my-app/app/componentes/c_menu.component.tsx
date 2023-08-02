@@ -15,6 +15,7 @@ export default function C_menuComponent(){
                 <li><a href="/i_react_hook_form">I Forms</a></li>
                 <li><a href="/j_ruta/id1">J Ruta</a></li>
                 <li><a href="/k_websockets">K websockets</a></li>
+                <li><a href="/l_redux">L redux</a></li>
             </ul>
         </>
     )

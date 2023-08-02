@@ -3,7 +3,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import React from "react";
 import C_menuComponent from "@/app/componentes/c_menu.component";
-
+import store from './l_redux/store/store'
+import {Provider, useDispatch} from "react-redux";
 const inter = Inter({ subsets: ['latin'] })
 
 // export const metadata = {
@@ -25,7 +26,10 @@ export default function RootLayout({
             crossOrigin="anonymous"></link>
       <C_menuComponent/>
       {/*<C_menuComponent></C_menuComponent>*/}
-      {children}
+
+      <Provider store={store}>
+          {children}
+      </Provider>
       <footer>Footer</footer>
       </body>
     </html>
