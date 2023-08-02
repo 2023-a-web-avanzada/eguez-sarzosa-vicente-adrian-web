@@ -14,19 +14,7 @@ export default function Page() {
         <>
             <h1>Materias</h1>
             <div className="row">
-                <div className="col-sm-6">
-                    <div className="d-grid gap-1 col-12 mx-auto">
-                        <button className="btn btn-primary" onClick={
-                            (event)=>{
-                                event.preventDefault();
-                                dispatch(agregarMateria({nombre: new Date().getTime().toString(), descripcion:'desc'}));
-                            }
-                        }>
-                            Anadir Materia
-                        </button>
-                    </div>
-                </div>
-                <div className="col-sm-6">
+                <div className="col-sm-12">
                     <div className="d-grid gap-1 col-12 mx-auto">
                         <button className="btn btn-primary"  onClick={
                             (event)=>{
@@ -40,7 +28,7 @@ export default function Page() {
                     <br/>
                     <br/>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-12">
                     <p><strong>Periodo actual:</strong>{periodoActual}</p>
                     <p><strong>Materia actual:</strong></p>
                     <ul>
@@ -48,12 +36,24 @@ export default function Page() {
                         <li><strong>Descripcion:</strong> {materiaActual.descripcion}</li>
                     </ul>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-12">
+                    <div className="d-grid gap-1 col-12 mx-auto">
+                        <button className="btn btn-primary" onClick={
+                            (event)=>{
+                                event.preventDefault();
+                                dispatch(agregarMateria({nombre: new Date().getTime().toString(), descripcion:'desc'}));
+                            }
+                        }>
+                            Anadir Materia
+                        </button>
+                    </div>
+                </div>
+                <div className="col-sm-12">
                     <div className="row">
                         {
                             materias.map(
                                 (materia) =>
-                                    <div key={materia.nombre} className="col-sm-6">
+                                    <div key={materia.nombre} className="col-sm-3">
                                         <div className="border-2 border-sky-500 p-4 m-2">
                                             <div className="text-center">
                                                 <p><strong>Nombre:</strong>{materia.nombre}</p>

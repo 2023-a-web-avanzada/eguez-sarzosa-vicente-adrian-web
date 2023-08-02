@@ -71,18 +71,21 @@ export function MostrarMateria(props: MostrarMateriaProps) {
                 Modificar Periodo Actual
             </button>
             <h2>Mostrar Materias Filtradas</h2>
-            {
-                props.materiasFiltradas
-                    .map(
-                        (materia) =>
-                            <div key={materia.nombre}>
-                                <div className="border-2 border-sky-500 p-4 m-2 text-center">
-                                    <p><strong>Nombre:</strong>{materia.nombre}</p>
-                                    <p><strong>Descripcion:</strong>{materia.descripcion}</p>
+            <div className="row">
+
+                {
+                    props.materiasFiltradas
+                        .map(
+                            (materia) =>
+                                <div key={materia.nombre} className="col-sm-3">
+                                    <div className="border-2 border-sky-500 p-4 m-2 text-center">
+                                        <p><strong>Nombre:</strong>{materia.nombre}</p>
+                                        <p><strong>Descripcion:</strong>{materia.descripcion}</p>
+                                    </div>
                                 </div>
-                            </div>
-                    )
-            }
+                        )
+                }
+            </div>
             <h2>Mostrar Todos</h2>
             <button className="btn btn-primary" onClick={
                 event => {
@@ -95,18 +98,20 @@ export function MostrarMateria(props: MostrarMateriaProps) {
                 Obtener todos
             </button>
             <p><strong>CARGANDO: </strong> {cargando ? 'Cargando...': ''}</p>
-            {
-                todos
-                    .map(
-                        (todo) =>
-                            <div key={todo.id}>
-                                <div className="border-2 border-sky-500 p-4 m-2 text-center">
-                                    <p><strong>ID:</strong> {todo.id}</p>
-                                    <p><strong>Titulo:</strong> {todo.title}</p>
+            <div className="row">
+                {
+                    todos
+                        .map(
+                            (todo) =>
+                                <div key={todo.id} className="col-sm-3">
+                                    <div className="border-2 border-sky-500 p-4 m-2 text-center">
+                                        <p><strong>ID:</strong> {todo.id}</p>
+                                        <p><strong>Titulo:</strong> {todo.title}</p>
+                                    </div>
                                 </div>
-                            </div>
-                    )
-            }
+                        )
+                }
+            </div>
         </>
     )
 }
