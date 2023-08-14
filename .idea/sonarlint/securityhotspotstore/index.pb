@@ -23,3 +23,11 @@ Q
 !03-react/my-app/postcss.config.js,9/d/9d9b11cfacc62811ac9d6cd43943c331b78b6b4e
 X
 (03-react/my-app/app/d_use_state/page.tsx,a/d/ade62002ae950297183b45df4d5c7770bc88be8d
+b
+204-nestjs-websockets/src/eventos/eventos.module.ts,6/c/6caf6ba3634cf7f967eebe4bc0f5eee633bc6cce
+d
+403-react/my-app/app/componentes/c_menu.component.tsx,1/6/16b6c1d888175d36b6a4610fb9888ad49dee87a8
+Q
+!03-react/my-app/package-lock.json,d/d/dd0f913c5457ee4cc239fa7e50caa6e229fcdcbe
+L
+03-react/my-app/package.json,b/4/b4bf71de326d5402da26de7ecba07080c371b7cc
