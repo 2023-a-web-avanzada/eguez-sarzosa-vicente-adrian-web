@@ -13,6 +13,9 @@ const app_service_1 = require("./app.service");
 const eventos_module_1 = require("./eventos/eventos.module");
 const typeorm_1 = require("@nestjs/typeorm");
 const usuario_entity_1 = require("./usuario/usuario.entity");
+const nota_entity_1 = require("./nota/nota.entity");
+const usuario_module_1 = require("./usuario/usuario.module");
+const nota_module_1 = require("./nota/nota.module");
 let AppModule = exports.AppModule = class AppModule {
 };
 exports.AppModule = AppModule = __decorate([
@@ -23,11 +26,12 @@ exports.AppModule = AppModule = __decorate([
                 type: 'sqlite',
                 database: './bdd/bdd.sqlite',
                 entities: [
-                    usuario_entity_1.UsuarioEntity
+                    usuario_entity_1.UsuarioEntity, nota_entity_1.NotaEntity
                 ],
                 synchronize: true,
                 dropSchema: false,
             }),
+            usuario_module_1.UsuarioModule, nota_module_1.NotaModule
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
