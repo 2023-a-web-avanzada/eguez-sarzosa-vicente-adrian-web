@@ -15,14 +15,8 @@ M
 03-react/my-app/tsconfig.json,2/5/25b475e0fb40924537f909f183837bff862dc046
 Y
 )03-react/my-app/app/b_hola_mundo/page.tsx,8/6/8641179ce1979724ede5aea9def9823fd6ecb4dd
-Z
-*03-react/my-app/app/c_componentes/page.tsx,a/0/a0f56e4ea172219773ad9302177cd91a753531f4
 J
 02-typescript/04-clases.ts,9/c/9c0bad42ba723dd33370d7a52799666d4dc84723
-Q
-!03-react/my-app/postcss.config.js,9/d/9d9b11cfacc62811ac9d6cd43943c331b78b6b4e
-X
-(03-react/my-app/app/d_use_state/page.tsx,a/d/ade62002ae950297183b45df4d5c7770bc88be8d
 b
 204-nestjs-websockets/src/eventos/eventos.module.ts,6/c/6caf6ba3634cf7f967eebe4bc0f5eee633bc6cce
 d
@@ -31,3 +25,5 @@ Q
 !03-react/my-app/package-lock.json,d/d/dd0f913c5457ee4cc239fa7e50caa6e229fcdcbe
 L
 03-react/my-app/package.json,b/4/b4bf71de326d5402da26de7ecba07080c371b7cc
+\
+,04-nestjs-websockets/src/nota/nota.entity.ts,5/3/53c3c12236acad73ac8579b06fc08d1967edfced
